@@ -1,1 +1,2 @@
-# nsgic-cards 
+# nsgic-cards
+.
