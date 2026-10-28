@@ -1,160 +1,312 @@
-
 <!DOCTYPE html>
 <html>
+ 
 <head>
-<meta charset='UTF-8'>
-<title>NSGIC Cards</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background: #f8f8f8;
-  }
-
-  .cards-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px; 
-  }
-
-  .three-card img {
-    width: auto;
-    height: 100%;
-    display: block;
-  }
-
-  .three-card {
-    width: auto;
-  }
-</style>
+    <meta charset='UTF-8'>
+    <title>NSGIC Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f8f8f8;
+        }
+ 
+        .cards-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            /* gap: 24px; */
+            /* display:flex; */
+        }
+ 
+        .three-card img {
+            /* width: auto; */
+            height: 200px;
+            display: inline-block;
+            /* margin-left: auto; */
+            /* margin-right: auto; */
+        }
+ 
+        .three-card {
+            /* width: auto; */
+            margin: auto;
+            align-content: center;
+            display: flex;
+ 
+        }
+    </style>
 </head>
+ 
 <body>
-
-<div class="cards-wrapper">
-
-   <!-- CARD 1 - States -->
-  <div class="three-card contrast-safe-text">
-    <calcite-card style="--calcite-color-foreground-1:white" thumbnail-position="block-start">
-
-      <div slot="thumbnail">
-        <a href="https://nsgic.hub.arcgis.com/pages/a03cebb9f27844479d2f7495c1e853e1" target="_blank" rel="noopener noreferrer">
-          <img src="https://nsgic.maps.arcgis.com/sharing/rest/content/items/c77bf9ad500d4503a75a8afa0d962a86/data" alt="USA">
-          <p style="text-align:center">States</p>
-        </a>
-      </div>
-
+ 
+    <div class="cards-wrapper">
+ 
+        <!-- CARD 1 - States -->
+        <div class="three-card contrast-safe-text">
+ 
+ 
+            <div slot="thumbnail">
+                <a href="https://nsgic.hub.arcgis.com/pages/a03cebb9f27844479d2f7495c1e853e1" target="_blank">
+                    <img src="https://nsgic.maps.arcgis.com/sharing/rest/content/items/c77bf9ad500d4503a75a8afa0d962a86/data"
+                        alt="USA">
+                    <p style="text-align:center">States</p>
+                </a>
+            </div>
+            <!--  
       <div class="card-content">
-        <h4 slot="heading">
-          <a href="https://nsgic.hub.arcgis.com/pages/a03cebb9f27844479d2f7495c1e853e1" target="_blank" rel="noopener noreferrer">
+<h4 slot="heading">
+<a href="https://nsgic.hub.arcgis.com/pages/a03cebb9f27844479d2f7495c1e853e1" target="_blank" rel="noopener noreferrer">
             States
-          </a>
-        </h4>
-
+</a>
+</h4>
+ 
         <div slot="footer-end" class="btn-group btn-group-justified">
+</div>
+</div> -->
+ 
+ 
         </div>
-      </div>
-
-    </calcite-card>
-  </div>
-  
-  <!-- CARD 2 - NGC -->
-  <div class="three-card contrast-safe-text">
-    <calcite-card style="--calcite-color-foreground-1:white" scale="m" thumbnail-position="block-start">
-
-      <div slot="thumbnail">
-        <a href="https://nsgic.org/wp-content/uploads/2025/05/NGC_Logo_FINAL-COLOR.png" target="_blank" rel="noopener noreferrer">
-          <img src="https://nsgic.org/wp-content/uploads/2025/05/NGC_Logo_FINAL-COLOR.png" alt="NGC logo">
-        </a>
-      </div>
-
-      <div class="card-content">
-        <h4 slot="heading">
-          <a href="https://nsgic.hub.arcgis.com/pages/163dec181ec24a5ba58cdf0ef3e1ca04" target="_blank" rel="noopener noreferrer">
-            NGC
-          </a>
-        </h4>
-
-        <div slot="footer-end" class="btn-group btn-group-justified">
+        <!-- CARD 2 - NGC -->
+        <div class="three-card contrast-safe-text">
+            <!-- <calcite-card style="--calcite-color-foreground-1:white" scale="m" thumbnail-position="block-start"> -->
+ 
+            <div slot="thumbnail">
+                <a href="https://nsgic.org/wp-content/uploads/2025/05/NGC_Logo_FINAL-COLOR.png" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="https://nsgic.org/wp-content/uploads/2025/05/NGC_Logo_FINAL-COLOR.png" alt="NGC logo">
+                    <p style="text-align: center;">NGC</p>
+                </a>
+            </div>
+ 
+            <!-- <div class="card-content">
+                    <h4 slot="heading">
+                        <a href="https://nsgic.hub.arcgis.com/pages/163dec181ec24a5ba58cdf0ef3e1ca04" target="_blank"
+                            rel="noopener noreferrer">
+                            NGC
+                        </a>
+                    </h4> -->
+ 
+            <!-- <div slot="footer-end" class="btn-group btn-group-justified">
+            </div> -->
         </div>
-      </div>
-
-    </calcite-card>
-  </div>
-
-
-  <!-- CARD 3 - CLC -->
-  <div class="three-card contrast-safe-text">
-    <calcite-card style="--calcite-color-foreground-1:white" scale="m" thumbnail-position="block-start">
-
-      <div slot="thumbnail">
-        <a href="https://nsgic.org/wp-content/uploads/2024/11/NSDI-Podcast-Cover-YT.png" target="_blank" rel="noopener noreferrer">
-          <img src="https://nsgic.org/wp-content/uploads/2024/11/NSDI-Podcast-Cover-YT.png" alt="CLC logo">
-        </a>
-      </div>
-
-      <div class="card-content">
-        <h4 slot="heading">
-          <a href="https://nsgic.hub.arcgis.com/pages/3bf3b4ee6f3446eb84fb3cd2a349691b" target="_blank" rel="noopener noreferrer">
-            CLC
-          </a>
-        </h4>
-
-        <div slot="footer-end" class="btn-group btn-group-justified">
+ 
+        <!-- </calcite-card> -->
+ 
+ 
+        <!-- CARD 3 - CLC -->
+        <!-- <div class="cards-wrapper"> -->
+        <div class="three-card contrast-safe-text">
+            <!-- <calcite-card style="--calcite-color-foreground-1:white" scale="m" thumbnail-position="block-start"> -->
+ 
+            <div slot="thumbnail">
+                <a href="https://nsgic.org/wp-content/uploads/2024/11/NSDI-Podcast-Cover-YT.png" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="https://nsgic.org/wp-content/uploads/2024/11/NSDI-Podcast-Cover-YT.png" alt="CLC logo">
+                    <p style="text-align: center;">CLC</p>
+                </a>
+            </div>
+ 
+            <!-- <div class="card-content">
+                    <h4 slot="heading">
+                        <a href="https://nsgic.hub.arcgis.com/pages/3bf3b4ee6f3446eb84fb3cd2a349691b" target="_blank"
+                            rel="noopener noreferrer">
+                            CLC
+                        </a>
+                    </h4> -->
+ 
+            <!-- <div slot="footer-end" class="btn-group btn-group-justified">
+            </div>
+            </div> -->
         </div>
-      </div>
-
-    </calcite-card>
-  </div>
-
-
-  <!-- CARD 4 - Advocacy -->
-  <div class="three-card contrast-safe-text">
-    <calcite-card style="--calcite-color-foreground-1:white" scale="m" thumbnail-position="block-start">
-
-      <div slot="thumbnail">
-        <a href="https://nsgic.maps.arcgis.com/sharing/rest/content/items/e361b7d8026b44ac972683e9f9dd9c76/data" target="_blank" rel="noopener noreferrer">
-          <img src="https://nsgic.maps.arcgis.com/sharing/rest/content/items/e361b7d8026b44ac972683e9f9dd9c76/data" alt="Advocacy image">
-        </a>
-      </div>
-
-      <div class="card-content">
-        <h4 slot="heading">
-          <a href="https://nsgic.hub.arcgis.com/pages/b81fea08b8c544f4a63c1988c6b9c76a" target="_blank" rel="noopener noreferrer">
-            Advocacy
-          </a>
-        </h4>
-
-        <div slot="footer-end" class="btn-group btn-group-justified">
+        <!-- </calcite-card> -->
+ 
+ 
+ 
+        <!-- CARD 4 - Advocacy -->
+        <div class="three-card contrast-safe-text">
+            <!-- <calcite-card style="--calcite-color-foreground-1:white" scale="m" thumbnail-position="block-start"> -->
+ 
+            <div slot="thumbnail">
+                <a href="https://nsgic.maps.arcgis.com/sharing/rest/content/items/e361b7d8026b44ac972683e9f9dd9c76/data"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="https://nsgic.maps.arcgis.com/sharing/rest/content/items/e361b7d8026b44ac972683e9f9dd9c76/data"
+                        alt="Advocacy image">
+                    <p style="text-align: center;">Advocacy</p>
+                </a>
+            </div>
+ 
+            <!-- <div class="card-content">
+                    <h4 slot="heading">
+                        <a href="https://nsgic.hub.arcgis.com/pages/b81fea08b8c544f4a63c1988c6b9c76a" target="_blank"
+                            rel="noopener noreferrer">
+                            Advocacy
+                        </a>
+                    </h4>
+ 
+                    <div slot="footer-end" class="btn-group btn-group-justified">
+                    </div>
+                </div> -->
+ 
+            <!-- </calcite-card> -->
         </div>
-      </div>
-
-    </calcite-card>
-  </div>
-
-
-  <!-- CARD 5 - GMA -->
-  <div class="three-card contrast-safe-text">
-    <calcite-card style="--calcite-color-foreground-1:white" scale="m" thumbnail-position="block-start">
-
-      <div slot="thumbnail">
-        <a href="https://nsgic.org/wp-content/uploads/2023/02/GMAUndatedLogoGold.png" target="_blank" rel="noopener noreferrer">
-          <img src="https://nsgic.org/wp-content/uploads/2023/02/GMAUndatedLogoGold.png" alt="GMA logo">
-        </a>
-      </div>
-
-      <div class="card-content">
-        <h4 slot="heading">
-          <a href="https://nsgic.hub.arcgis.com/pages/9abdd5b9ebeb4ce1a65c548c0ea8c5c8" target="_blank" rel="noopener noreferrer">
-            GMA
-          </a>
-        </h4>
-
-        <div slot="footer-end" class="btn-group btn-group-justified">
+ 
+        <!-- </div> -->
+        <!-- CARD 5 - GMA -->
+        <div class="three-card contrast-safe-text">
+            <!-- <calcite-card style="--calcite-color-foreground-1:white" scale="m" thumbnail-position="block-start"> -->
+ 
+            <div slot="thumbnail">
+                <a href="https://nsgic.org/wp-content/uploads/2023/02/GMAUndatedLogoGold.png" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="https://nsgic.org/wp-content/uploads/2023/02/GMAUndatedLogoGold.png" alt="GMA logo">
+                    <p style="text-align:center;">GMA</p>
+                </a>
+            </div>
+ 
+            <!-- <div class="three-card contrast-safe-text">
+                <div slot="thumbnail">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+            </div> -->
+ 
+            <!-- <div class="card-content">
+                    <h4 slot="heading">
+                        <a href="https://nsgic.hub.arcgis.com/pages/9abdd5b9ebeb4ce1a65c548c0ea8c5c8" target="_blank"
+                            rel="noopener noreferrer">
+                            GMA
+                        </a>
+                    </h4>
+ 
+                    <div slot="footer-end" class="btn-group btn-group-justified">
+                    </div>
+                </div> -->
+ 
+            <!-- </calcite-card> -->
         </div>
-      </div>
-
-    </calcite-card>
-  </div>
-
+    </div>
 </body>
+ 
+</html>
+States and General Information
+Discover, analyze and download data from States and General Information. Download in CSV, KML, Zip, GeoJSON, GeoTIFF or PNG. Find API links for GeoServices, WMS, and WFS. Analyze with charts and th...
+ 
+this should fix it. just make sure to change your urls
+ 
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset='UTF-8'>
+    <title>NSGIC Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f8f8f8;
+        }
+ 
+        .cards-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            /* gap: 24px; */
+            /* display:flex; */
+        }
+ 
+        .three-card img {
+            /* width: auto; */
+            height: 200px;
+            display: inline-block;
+            /* margin-left: auto; */
+            /* margin-right: auto; */
+        }
+ 
+        .three-card {
+            /* width: auto; */
+            margin: auto;
+            align-content: center;
+            display: flex;
+ 
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <div class="cards-wrapper">
+ 
+        <!-- CARD 1 - States -->
+        <div class="three-card contrast-safe-text">
+ 
+ 
+            <div slot="thumbnail">
+                <a href="https://nsgic.hub.arcgis.com/pages/a03cebb9f27844479d2f7495c1e853e1" target="_blank">
+                    <img src="https://nsgic.maps.arcgis.com/sharing/rest/content/items/c77bf9ad500d4503a75a8afa0d962a86/data"
+                        alt="USA">
+                    <p style="text-align:center">States</p>
+                </a>
+            </div>
+ 
+ 
+        </div>
+        <!-- CARD 2 - NGC -->
+        <div class="three-card contrast-safe-text">
+ 
+ 
+            <div slot="thumbnail">
+                <a href="https://nsgic.org/wp-content/uploads/2025/05/NGC_Logo_FINAL-COLOR.png" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="https://nsgic.org/wp-content/uploads/2025/05/NGC_Logo_FINAL-COLOR.png" alt="NGC logo">
+                    <p style="text-align: center;">NGC</p>
+                </a>
+            </div>
+ 
+ 
+        </div>
+ 
+ 
+ 
+        <!-- CARD 3 - CLC -->
+        <div class="three-card contrast-safe-text">
+ 
+            <div slot="thumbnail">
+                <a href="https://nsgic.org/wp-content/uploads/2024/11/NSDI-Podcast-Cover-YT.png" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="https://nsgic.org/wp-content/uploads/2024/11/NSDI-Podcast-Cover-YT.png" alt="CLC logo">
+                    <p style="text-align: center;">CLC</p>
+                </a>
+            </div>
+        </div>
+ 
+ 
+ 
+ 
+        <!-- CARD 4 - Advocacy -->
+        <div class="three-card contrast-safe-text">
+ 
+            <div slot="thumbnail">
+                <a href="https://nsgic.maps.arcgis.com/sharing/rest/content/items/e361b7d8026b44ac972683e9f9dd9c76/data"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="https://nsgic.maps.arcgis.com/sharing/rest/content/items/e361b7d8026b44ac972683e9f9dd9c76/data"
+                        alt="Advocacy image">
+                    <p style="text-align: center;">Advocacy</p>
+                </a>
+            </div>
+        </div>
+ 
+        <!-- </div> -->
+        <!-- CARD 5 - GMA -->
+        <div class="three-card contrast-safe-text">
+ 
+            <div slot="thumbnail">
+                <a href="https://nsgic.org/wp-content/uploads/2023/02/GMAUndatedLogoGold.png" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="https://nsgic.org/wp-content/uploads/2023/02/GMAUndatedLogoGold.png" alt="GMA logo">
+                    <p style="text-align:center;">GMA</p>
+                </a>
+            </div>
+ 
+        </div>
+    </div>
+</body>
+ 
 </html>
